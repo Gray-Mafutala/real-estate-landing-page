@@ -1,0 +1,21 @@
+/* || Band's Footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 50px 0px 0px;
+    margin: 40px 0px 5px;
+    height: 175px;
+
+    text-align: center;
+}
+
+.footer__brand-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 151px;
+    height: auto;
+}

@@ -1,16 +1,32 @@
-/* || CSS Variables */
+/* || Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;800&display=swap');
 
+
+/* || CSS Variables */
 :root {
-    --default-background-color: #fdfdfd;
-    --default-text-color: #333;
+    --default-background-color: #16161E;
+    --default-text-color: #fff;
+
+    --font-family-inter: Inter, sans-serif;
+    --font-family-montserrat: 'Montserrat', sans-serif;
+
+    --color-red: #fa4a55;
+    --color-red-hover: #f8636d;
+    --color-blue: #0249ff;
+    --color-off-white: #e6e6e6;
+    --color-dark-gray: #29292c;
 }
 
 
 /* || General Styles */
-
 body {
     color: var(--default-text-color);
     background: var(--default-background-color);
+
+    font-family: var(--font-family-inter);
     font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
 
 }
