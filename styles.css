@@ -2,6 +2,7 @@
 .main-content {
     display: flex;
     justify-content: center;
+    margin: 58px 0 145px;
     color: #fff;
     text-align: center;
     white-space: nowrap;
@@ -11,9 +12,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0 20px;
     align-items: center;
     row-gap: 24px;
-    padding: 58px 48px 145px;
     max-width: 800px;
     box-sizing: border-box;
 }
@@ -73,9 +74,9 @@
 .achievements {
     display: flex;
     justify-content: center;
+    margin: 0 20px;
     gap: 32px;
     flex-wrap: wrap;
-
     text-align: center;
     white-space: nowrap;
 }
@@ -104,8 +105,100 @@
 
 .achievements__card__subject {
     color: #bcbcbe;
-    /*var(--color-off-white);*/
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
+}
+
+
+
+/* || Resposive */
+
+@media screen and (max-width: 840px) {
+
+    /* || Header and Menu */
+    .header__menu__hamburger-icon {
+        display: block;
+        width: 38px;
+        transition: .3s;
+        z-index: 1;
+    }
+
+    /* Hide list of links, they will be displayed 
+    only if we hover over the humburger menu icon */
+    .header__menu__links {
+        display: none;
+    }
+
+    .header__menu__logo {
+        /* To put the logo in the center of the nav*/
+        flex-grow: 1;
+        margin: 0;
+
+        /* Resize site logo (text) */
+        font-size: clamp(16px, 2.2vw, 18px);
+    }
+
+    .header__menu__btn-sign-up {
+        /* To put the site logo in the center of the menu */
+        margin: 0;
+        /* Resize the sign-up button */
+        font-size: clamp(14px, 2vw, 18px);
+        padding: 0 1.6em;
+    }
+
+    .header__menu__hamburger-icon:active,
+    .header__menu__hamburger-icon:hover {
+        cursor: pointer;
+        background-color: var(--color-red);
+    }
+
+    /* :is(.header__menu__hamburger-icon:active,
+        .header__menu__links:hover) */
+    .header__menu__hamburger-icon:active .header__menu__links {
+        position: absolute;
+        top: 18px;
+        left: -9px;
+        width: 50vw;
+        height: 55vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 16px;
+
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+
+        background: #22171aca;
+        backdrop-filter: blur(6px);
+
+        font-size: clamp(16px, 3.8vw, 24px);
+
+    }
+
+
+    /* || Main content */
+    .main-content__company-name {
+        font-size: clamp(18px, 2.8vw, 24px);
+        white-space: wrap;
+    }
+
+    .main-content__company-offer {
+        font-size: clamp(24px, 6vw, 48px);
+        white-space: wrap;
+    }
+
+    .main-content__company-overview {
+        font-size: clamp(14px, 2vw, 16px);
+        white-space: wrap;
+    }
+
+    .main-content__btn {
+        font-size: clamp(14px, 2vw, 18px);
+        padding: 0 1.6em;
+    }
+
+
 }

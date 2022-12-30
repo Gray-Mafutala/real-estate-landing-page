@@ -6,8 +6,8 @@
     gap: 30px;
     flex-wrap: wrap;
     padding: 50px 0px 0px;
-    margin: 40px 0px 5px;
-    height: 175px;
+    margin: 40px 20px 16px;
+    min-height: 175px;
 
     text-align: center;
 }
@@ -18,4 +18,11 @@
     align-items: center;
     width: 151px;
     height: auto;
+}
+
+.footer__brand-img {
+    /* width: clamp(48px, 151px, auto);
+    height: auto; */
+    width: 83px;
+    height: 83px;
 }
