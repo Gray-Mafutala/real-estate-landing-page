@@ -180,19 +180,27 @@
 
 
     /* || Main content */
+    .main-content {
+        white-space: normal;
+        margin-top: clamp(28px, 6.8vw, 58px);
+        margin-bottom: clamp(60px, 17vw, 145px);
+    }
+
+    .main-content__wrapper {
+        row-gap: clamp(14px, 3vw, 24px);
+    }
+
     .main-content__company-name {
         font-size: clamp(18px, 2.8vw, 24px);
-        white-space: wrap;
     }
 
     .main-content__company-offer {
         font-size: clamp(24px, 6vw, 48px);
-        white-space: wrap;
+        line-height: clamp(30px, 6.8vw, 58px);
     }
 
     .main-content__company-overview {
         font-size: clamp(14px, 2vw, 16px);
-        white-space: wrap;
     }
 
     .main-content__btn {
@@ -201,4 +209,39 @@
     }
 
 
+    /* || Achievements */
+    .achievements {
+        flex-direction: column;
+        align-content: center;
+        white-space: normal;
+
+    }
+
+    .achievements__card {
+        width: clamp(168px, 40vw, 340px);
+    }
+
+    .achievements__card__num {
+        font-size: clamp(24px, 3.8vw, 32px);
+        line-height: clamp(22px, 4.5vw, 39px);
+    }
+
+    .achievements__card__subject {
+        font-size: clamp(14px, 2vw, 18px);
+    }
+
+
+    /* || Brand's Footer */
+    .footer {
+        gap: clamp(16px, 3.8vw, 30px);
+        margin-top: clamp(20px, 8vw, 90px);
+    }
+
+    .footer__brand-container {
+        width: clamp(60px, 22vw, 150px);
+    }
+
+    .footer__brand-img {
+        width: clamp(48px, 12vw, 100px);
+    }
 }

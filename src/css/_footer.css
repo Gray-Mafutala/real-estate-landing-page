@@ -6,8 +6,7 @@
     gap: 30px;
     flex-wrap: wrap;
     padding: 50px 0px 0px;
-    margin: 40px 20px 16px;
-    min-height: 175px;
+    margin: 90px 10px 16px;
 
     text-align: center;
 }
@@ -16,13 +15,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 151px;
+    width: 150px;
     height: auto;
 }
 
 .footer__brand-img {
-    /* width: clamp(48px, 151px, auto);
-    height: auto; */
-    width: 83px;
-    height: 83px;
+    width: 100px;
+    height: auto;
 }
