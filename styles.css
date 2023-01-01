@@ -117,17 +117,10 @@
 @media screen and (max-width: 840px) {
 
     /* || Header and Menu */
+
     .header__menu__hamburger-icon {
         display: block;
-        width: 38px;
-        transition: .3s;
         z-index: 1;
-    }
-
-    /* Hide list of links, they will be displayed 
-    only if we hover over the humburger menu icon */
-    .header__menu__links {
-        display: none;
     }
 
     .header__menu__logo {
@@ -147,22 +140,15 @@
         padding: 0 1.6em;
     }
 
-    .header__menu__hamburger-icon:active,
-    .header__menu__hamburger-icon:hover {
-        cursor: pointer;
-        background-color: var(--color-red);
-    }
-
-    /* :is(.header__menu__hamburger-icon:active,
-        .header__menu__links:hover) */
-    .header__menu__hamburger-icon:active .header__menu__links {
+    .header__menu__links {
         position: absolute;
         top: 18px;
         left: -9px;
         width: 50vw;
         height: 55vh;
 
-        display: flex;
+        /* Will be displayed when click on the humburger icon */
+        display: none;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -175,7 +161,6 @@
         backdrop-filter: blur(6px);
 
         font-size: clamp(16px, 3.8vw, 24px);
-
     }
 
 
@@ -243,5 +228,38 @@
 
     .footer__brand-img {
         width: clamp(48px, 12vw, 100px);
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .header__menu {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 16px;
+    }
+
+    .header__menu__links {
+        top: 55px;
+        left: 0;
+        width: 80vw;
+    }
+
+    .header__menu__hamburger-icon {
+        width: 36px;
+        top: 16px;
+        left: 0px;
+        position: absolute;
+
+    }
+
+    .header__menu__btn-sign-up {
+        margin-bottom: 12px;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    .header__menu__logo {
+        margin-top: 40px;
     }
 }
