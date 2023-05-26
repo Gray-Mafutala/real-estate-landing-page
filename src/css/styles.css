@@ -57,6 +57,7 @@
     font-size: 18px;
     line-height: 40px;
 
+    user-select: none;
     transition: .3s;
 }
 

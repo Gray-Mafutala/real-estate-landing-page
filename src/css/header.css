@@ -116,6 +116,7 @@
 
     text-align: center;
     white-space: nowrap;
+    user-select: none;
 
     transition: .3s;
 }
