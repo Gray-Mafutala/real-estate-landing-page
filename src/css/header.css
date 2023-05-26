@@ -57,7 +57,7 @@
 
 .header__menu__logo::before {
     content: "";
-    background: url("/assets/img/logo-site.svg");
+    background: url("../../assets/img/logo-site.svg");
     display: inline-block;
     background-repeat: no-repeat;
     width: 34px;
