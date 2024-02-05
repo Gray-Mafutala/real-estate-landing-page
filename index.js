@@ -4,11 +4,11 @@ const menuIcon = document.querySelector('.header__menu__hamburger-icon');
 menuIcon.addEventListener('click', () => {
     if (menu_links.style.display === 'flex') {
         menu_links.style.display = 'none';
-        menuIcon.src = "/assets/img/humburger-menu.svg";
+        menuIcon.src = "./assets/img/humburger-menu.svg";
     }
     else {
         menu_links.style.display = 'flex';
-        menuIcon.src = "/assets/img/close-menu-links.svg";
+        menuIcon.src = "./assets/img/close-menu-links.svg";
     }
 });
 
@@ -17,10 +17,10 @@ window.addEventListener('resize', () => {
     if (window.innerWidth > 840) {
 
         menu_links.style.display = 'flex';
-        menuIcon.src = "/assets/img/humburger-menu.svg";
+        menuIcon.src = "./assets/img/humburger-menu.svg";
     }
     else {
         menu_links.style.display = 'none';
-        menuIcon.src = "/assets/img/humburger-menu.svg";
+        menuIcon.src = "./assets/img/humburger-menu.svg";
     }
 });

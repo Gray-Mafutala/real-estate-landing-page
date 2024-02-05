@@ -1,15 +1,16 @@
-## 🖈 Integration of _figma models_
+## From Figma design to code · HTML/CSS and JS
 
-![Render on a large screen](/assets/for-readme-file/screen-1.PNG)
+### 🖈 Real Estate · Landing Page
 
-- 🛠️ With **_HTML/CSS_** and **_JS_**
+ - **Take a look at it** [`Real Estate Landing Page`](https://gray-mafutala.github.io/real-estate-landing-page/) 👀
+ - 🔗 Attribution for Figma design [`here`](https://dribbble.com/shots/17629598-Real-Estate-Landing-Page)
+---
 
-- 🔗 **Figma model** [Real Estate Landing Page](https://dribbble.com/shots/17629598-Real-Estate-Landing-Page), by [Sarwar Jahan Rimon](https://dribbble.com/sarwar-jahan-rimon/followers)
+### Overview after integration
+#### Desktop
 
-- 🥴 With a **_Responsive_** that I cobbled together as best I could because there was none in the figma model 🤷‍♂️
+  ![Desktop version of site after integration](/readme-img/screen-1.PNG)
 
-  ![Render on a medium screen](/assets/for-readme-file/screen-2.PNG)
-  
-- 🏗️ Can still be improved, the code can be simplified, the mistake I made is not to have thought responsive right away...
+#### Menu
 
-- ✏️ Rate me out of 10 😜
+  ![Menu of site](/readme-img/screen-2.PNG)
